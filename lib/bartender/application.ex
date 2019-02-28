@@ -6,11 +6,11 @@ defmodule Bartender.Application do
   use Application
 
   def start(_type, _args) do
-    import Supervisor.Spec, warn: false
-
     # List all child processes to be supervised
     children = [
-      {Bartender.Server, []}
+      {Bartender.Server, []},
+      {Redix, name: :redix},
+      {Registry, keys: :duplicate, name: :client_registry},
       # Starts a worker by calling: Bartender.Worker.start_link(arg)
       # {Bartender.Worker, arg}
     ]
