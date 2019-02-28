@@ -19,3 +19,10 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/bartender](https://hexdocs.pm/bartender).
 
+## 使ってるもの
+- Elixir
+- Cowboy https://ninenines.eu/
+- Plug
+- PlugCowboy
+- Redix
+- Msgpax
